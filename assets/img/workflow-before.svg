@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 140" width="920" height="140" font-family="system-ui, 'Apple SD Gothic Neo', 'Segoe UI', sans-serif">
+  <defs>
+    <marker id="b1" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#cbd5e1"/>
+    </marker>
+    <filter id="b2" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#0f172a1a"/>
+    </filter>
+  </defs>
+
+  <rect width="920" height="140" fill="#f8fafc" rx="16"/>
+
+  <text x="50" y="44" font-size="13" font-weight="700" fill="#334155">기존 작업 절차</text>
+
+  <g filter="url(#b2)">
+    <rect x="50" y="62" width="100" height="46" rx="7" fill="#ffffff" stroke="#e2e8f0"/>
+    <rect x="170" y="62" width="100" height="46" rx="7" fill="#ffffff" stroke="#e2e8f0"/>
+    <rect x="290" y="62" width="100" height="46" rx="7" fill="#fffbeb" stroke="#fde68a"/>
+    <rect x="410" y="62" width="100" height="46" rx="7" fill="#ffffff" stroke="#e2e8f0"/>
+    <rect x="530" y="62" width="100" height="46" rx="7" fill="#ffffff" stroke="#e2e8f0"/>
+    <rect x="650" y="62" width="100" height="46" rx="7" fill="#fffbeb" stroke="#fde68a"/>
+    <rect x="770" y="62" width="100" height="46" rx="7" fill="#fffbeb" stroke="#fde68a"/>
+  </g>
+
+  <text x="100" y="90" font-size="12" fill="#475569" text-anchor="middle">티켓 확인</text>
+  <text x="220" y="90" font-size="12" fill="#475569" text-anchor="middle">브랜치 생성</text>
+  <text x="340" y="90" font-size="12" font-weight="700" fill="#b45309" text-anchor="middle">작업</text>
+  <text x="460" y="90" font-size="12" fill="#475569" text-anchor="middle">PR 생성</text>
+  <text x="580" y="90" font-size="11.5" fill="#475569" text-anchor="middle">티켓 상태 갱신</text>
+  <text x="700" y="90" font-size="12" font-weight="700" fill="#b45309" text-anchor="middle">리뷰</text>
+  <text x="820" y="90" font-size="12" font-weight="700" fill="#b45309" text-anchor="middle">머지</text>
+
+  <line x1="154" y1="85" x2="166" y2="85" stroke="#cbd5e1" stroke-width="1.5" marker-end="url(#b1)"/>
+  <line x1="274" y1="85" x2="286" y2="85" stroke="#cbd5e1" stroke-width="1.5" marker-end="url(#b1)"/>
+  <line x1="394" y1="85" x2="406" y2="85" stroke="#cbd5e1" stroke-width="1.5" marker-end="url(#b1)"/>
+  <line x1="514" y1="85" x2="526" y2="85" stroke="#cbd5e1" stroke-width="1.5" marker-end="url(#b1)"/>
+  <line x1="634" y1="85" x2="646" y2="85" stroke="#cbd5e1" stroke-width="1.5" marker-end="url(#b1)"/>
+  <line x1="754" y1="85" x2="766" y2="85" stroke="#cbd5e1" stroke-width="1.5" marker-end="url(#b1)"/>
+</svg>

@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 690" width="920" height="690" font-family="system-ui, 'Apple SD Gothic Neo', 'Segoe UI', sans-serif">
+  <defs>
+    <filter id="pshadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="#0f172a1f"/>
+    </filter>
+  </defs>
+
+  <rect width="920" height="690" fill="#f1f2f4" rx="14"/>
+
+  <g filter="url(#pshadow)">
+    <rect x="24" y="20" width="872" height="650" rx="10" fill="#ffffff" stroke="#e9e9e7"/>
+  </g>
+
+  <text x="56" y="52" font-size="11.5" fill="#9b9a97">업무 관리 / 일간 업무일지</text>
+  <text x="56" y="92" font-size="22" font-weight="700" fill="#37352f">2026.08.04 (화)</text>
+
+  <!-- callout -->
+  <rect x="56" y="112" width="808" height="38" rx="6" fill="#f1f1ef"/>
+  <text x="72" y="136" font-size="12.5" fill="#37352f">📋 배포 1건 상태 미반영 · 이어서 할 것 2건 · 대기 1건</text>
+
+  <!-- 오늘 순서 -->
+  <text x="56" y="188" font-size="15" font-weight="700" fill="#37352f">오늘 순서</text>
+  <text x="56" y="214" font-size="12.5" fill="#37352f">1.&#160;&#160;<tspan font-weight="600" fill="#2563eb">ABC-2689</tspan> 티켓 상태만 Done으로 옮기기</text>
+  <text x="56" y="236" font-size="12.5" fill="#37352f">2.&#160;&#160;<tspan font-weight="600" fill="#2563eb">ABC-2750</tspan> 이어서 구현하기</text>
+
+  <!-- 어제 진행된 것 -->
+  <text x="56" y="278" font-size="15" font-weight="700" fill="#37352f">어제 진행된 것</text>
+  <circle cx="62" cy="301" r="2.5" fill="#37352f"/>
+  <text x="76" y="305" font-size="12.5" fill="#37352f"><tspan font-weight="600" fill="#2563eb">ABC-2689</tspan> 목록 필터 추가 — 실서버 배포 완료, 티켓은 <tspan fill="#9b9a97">In Review</tspan> · A</text>
+  <circle cx="62" cy="325" r="2.5" fill="#37352f"/>
+  <text x="76" y="329" font-size="12.5" fill="#37352f"><tspan font-weight="600" fill="#2563eb">ABC-2750</tspan> 상세 화면 개편 — 티켓만 갱신, 커밋 없음 · A</text>
+
+  <!-- 이어서 할 것 -->
+  <text x="56" y="371" font-size="15" font-weight="700" fill="#37352f">이어서 할 것</text>
+  <rect x="57" y="389" width="11" height="11" rx="2.5" fill="#ffffff" stroke="#b1b0ad"/>
+  <text x="80" y="399" font-size="12.5" fill="#37352f"><tspan font-weight="600" fill="#2563eb">ABC-2750</tspan> 상세 화면 개편</text>
+
+  <!-- 어제 배포 표 -->
+  <text x="56" y="441" font-size="15" font-weight="700" fill="#37352f">어제 배포 <tspan font-size="11.5" font-weight="400" fill="#9b9a97">(팀 전체)</tspan></text>
+
+  <g stroke="#e9e9e7" stroke-width="1">
+    <rect x="56" y="456" width="808" height="26" fill="#f1f1ef"/>
+    <rect x="56" y="482" width="808" height="26" fill="#eaf3fb"/>
+    <rect x="56" y="508" width="808" height="26" fill="#ffffff"/>
+    <line x1="230" y1="456" x2="230" y2="534"/>
+    <line x1="600" y1="456" x2="600" y2="534"/>
+    <line x1="658" y1="456" x2="658" y2="534"/>
+    <line x1="716" y1="456" x2="716" y2="534"/>
+    <line x1="774" y1="456" x2="774" y2="534"/>
+  </g>
+
+  <text x="70" y="473" font-size="11.5" font-weight="700" fill="#37352f">티켓</text>
+  <text x="244" y="473" font-size="11.5" font-weight="700" fill="#37352f">내용</text>
+  <text x="614" y="473" font-size="11.5" font-weight="700" fill="#37352f">dev</text>
+  <text x="672" y="473" font-size="11.5" font-weight="700" fill="#37352f">stg</text>
+  <text x="726" y="473" font-size="11.5" font-weight="700" fill="#37352f">main</text>
+  <text x="788" y="473" font-size="11.5" font-weight="700" fill="#37352f">작업자</text>
+
+  <text x="70" y="499" font-size="12" font-weight="700" fill="#2563eb">ABC-2689</text>
+  <text x="244" y="499" font-size="12" fill="#37352f">목록 필터 추가 — 저장 흐름 보완</text>
+  <text x="623" y="499" font-size="11">✅</text>
+  <text x="679" y="499" font-size="11">✅</text>
+  <text x="739" y="499" font-size="11">✅</text>
+  <text x="788" y="499" font-size="12" fill="#37352f">A</text>
+
+  <text x="70" y="525" font-size="12" fill="#2563eb">ABC-2695</text>
+  <text x="244" y="525" font-size="12" fill="#37352f">비활성 버튼 색 오류</text>
+  <text x="623" y="525" font-size="11">✅</text>
+  <text x="679" y="525" font-size="11">✅</text>
+  <text x="788" y="525" font-size="12" fill="#37352f">B</text>
+
+  <text x="56" y="558" font-size="11" fill="#9b9a97">main 열이 빈 행이 실서버 배포가 남은 것 · 파란 행이 내 작업</text>
+
+  <!-- 수치 표 -->
+  <text x="56" y="590" font-size="15" font-weight="700" fill="#37352f">수치</text>
+  <g stroke="#e9e9e7" stroke-width="1">
+    <rect x="56" y="602" width="808" height="24" fill="#f1f1ef"/>
+    <rect x="56" y="626" width="808" height="24" fill="#ffffff"/>
+    <line x1="258" y1="602" x2="258" y2="650"/>
+    <line x1="460" y1="602" x2="460" y2="650"/>
+    <line x1="662" y1="602" x2="662" y2="650"/>
+  </g>
+  <text x="70" y="618" font-size="11.5" font-weight="700" fill="#37352f">미완료</text>
+  <text x="272" y="618" font-size="11.5" font-weight="700" fill="#37352f">어제 움직임</text>
+  <text x="474" y="618" font-size="11.5" font-weight="700" fill="#37352f">3일+ 정체</text>
+  <text x="676" y="618" font-size="11.5" font-weight="700" fill="#37352f">내 커밋</text>
+  <text x="70" y="642" font-size="12" fill="#37352f">3</text>
+  <text x="272" y="642" font-size="12" fill="#37352f">2</text>
+  <text x="474" y="642" font-size="12" fill="#37352f">1</text>
+  <text x="676" y="642" font-size="12" fill="#37352f">4</text>
+</svg>

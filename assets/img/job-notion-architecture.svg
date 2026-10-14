@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" width="1200" height="620" font-family="system-ui, 'Apple SD Gothic Neo', 'Segoe UI', sans-serif">
+  <defs>
+    <marker id="ar" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#94a3b8"/>
+    </marker>
+    <filter id="ic" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a1c"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="620" fill="#eef1f5" rx="18"/>
+  <text x="600" y="58" font-size="30" font-weight="800" fill="#1e293b" text-anchor="middle">채용공고 분석 자동화 구조</text>
+
+  <text x="60" y="100" font-size="13" font-weight="700" fill="#94a3b8">입력</text>
+  <text x="400" y="100" font-size="13" font-weight="700" fill="#5b8ada">분석</text>
+  <text x="790" y="100" font-size="13" font-weight="700" fill="#94a3b8">Notion</text>
+
+  <!-- 입력 · 여백 좌 24 / 상 18 / 하 19 -->
+  <g filter="url(#ic)"><rect x="60" y="114" width="250" height="96" rx="12" fill="#fff" stroke="#c7d2e0" stroke-width="2.5"/></g>
+  <text x="84" y="144" font-size="16" font-weight="700" fill="#334155">공고 URL · 본문</text>
+  <text x="84" y="166" font-size="13.5" fill="#64748b">채용 플랫폼 · 회사 페이지</text>
+  <text x="84" y="188" font-size="13.5" fill="#94a3b8">사이트에 따라 판정 실패</text>
+
+  <g filter="url(#ic)"><rect x="60" y="228" width="250" height="96" rx="12" fill="#fff" stroke="#c7d2e0" stroke-width="2.5"/></g>
+  <text x="84" y="258" font-size="16" font-weight="700" fill="#334155">Notion 인박스</text>
+  <text x="84" y="280" font-size="13.5" fill="#64748b">상태 = 인박스</text>
+  <text x="84" y="302" font-size="13.5" fill="#94a3b8">URL만 담아둔 행</text>
+
+  <g filter="url(#ic)"><rect x="60" y="342" width="250" height="96" rx="12" fill="#fff" stroke="#c7d2e0" stroke-width="2.5"/></g>
+  <text x="84" y="372" font-size="16" font-weight="700" fill="#334155">profile.md</text>
+  <text x="84" y="394" font-size="13.5" fill="#64748b">연차 · 보유기술</text>
+  <text x="84" y="416" font-size="13.5" fill="#94a3b8">없으면 적합도 비움</text>
+
+  <!-- 분석 · 내용 높이에 맞추고 세로 중앙 정렬 (155~398) -->
+  <g filter="url(#ic)"><rect x="400" y="155" width="300" height="243" rx="14" fill="#dbeafe" stroke="#93c5fd" stroke-width="2.5"/></g>
+  <text x="424" y="187" font-size="19" font-weight="700" fill="#1e40af">Claude · MCP</text>
+
+  <line x1="424" y1="209" x2="676" y2="209" stroke="#a9c8f0" stroke-width="1.5"/>
+  <text x="424" y="237" font-size="15" font-weight="700" fill="#2f5d9e">구조화 추출</text>
+  <text x="424" y="259" font-size="13.5" fill="#3f6cb0">경력 · 기술 · 역량 · 전형 · 마감일</text>
+  <text x="424" y="281" font-size="13.5" fill="#7c9bc9">analysis-spec.md</text>
+
+  <line x1="424" y1="303" x2="676" y2="303" stroke="#a9c8f0" stroke-width="1.5"/>
+  <text x="424" y="331" font-size="15" font-weight="700" fill="#2f5d9e">적합도 계산</text>
+  <text x="424" y="353" font-size="13.5" fill="#3f6cb0">필수60 · 경력20 · 우대20 · 감점−20</text>
+  <text x="424" y="375" font-size="13.5" fill="#7c9bc9">fit-spec.md</text>
+
+  <!-- Notion -->
+  <g filter="url(#ic)"><rect x="790" y="114" width="350" height="140" rx="12" fill="#fff" stroke="#c7d2e0" stroke-width="2.5"/></g>
+  <text x="814" y="144" font-size="16" font-weight="700" fill="#334155">카드</text>
+  <text x="814" y="166" font-size="13.5" fill="#64748b">속성 · 적합도 · 적합도근거</text>
+  <text x="814" y="188" font-size="13.5" fill="#64748b">본문 = AI 요약 + 원문</text>
+  <text x="814" y="210" font-size="13.5" fill="#64748b">상태 = 관심</text>
+  <text x="814" y="232" font-size="13.5" fill="#94a3b8">이력서 · 지원일은 수동</text>
+
+  <g filter="url(#ic)"><rect x="790" y="298" width="350" height="140" rx="12" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="2.5"/></g>
+  <text x="814" y="328" font-size="16" font-weight="700" fill="#334155">수식 · 자동 계산</text>
+  <text x="814" y="350" font-size="13.5" fill="#64748b">마감임박 — 마감일 기준 D-day</text>
+  <text x="814" y="372" font-size="13.5" fill="#64748b">지원후경과 — 지원일 기준 D+n</text>
+  <text x="814" y="394" font-size="13.5" fill="#94a3b8">자동화가 쓰지 않는다</text>
+  <text x="814" y="416" font-size="13.5" fill="#94a3b8">MCP로는 값을 읽지 못한다</text>
+
+  <!-- 화살표 -->
+  <line x1="316" y1="162" x2="394" y2="220" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#ar)"/>
+  <line x1="316" y1="276" x2="394" y2="276" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#ar)"/>
+  <line x1="316" y1="390" x2="394" y2="332" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#ar)"/>
+  <line x1="706" y1="276" x2="784" y2="190" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#ar)"/>
+  <line x1="965" y1="260" x2="965" y2="292" stroke="#cbd5e1" stroke-width="2.5" marker-end="url(#ar)"/>
+
+  <!-- 명령 · 동일 폭 256 · 간격 18 · 좌우 여백 24 -->
+  <text x="60" y="474" font-size="13" font-weight="700" fill="#94a3b8">명령</text>
+  <g font-size="14">
+    <rect x="60" y="488" width="256" height="44" rx="10" fill="#fff" stroke="#c7d2e0" stroke-width="2"/>
+    <text x="84" y="514" font-weight="700" fill="#334155">/analyze-job</text>
+    <text x="292" y="514" fill="#94a3b8" text-anchor="end">단건</text>
+
+    <rect x="334" y="488" width="256" height="44" rx="10" fill="#fff" stroke="#c7d2e0" stroke-width="2"/>
+    <text x="358" y="514" font-weight="700" fill="#334155">/process-inbox</text>
+    <text x="566" y="514" fill="#94a3b8" text-anchor="end">일괄</text>
+
+    <rect x="608" y="488" width="256" height="44" rx="10" fill="#fff" stroke="#c7d2e0" stroke-width="2"/>
+    <text x="632" y="514" font-weight="700" fill="#334155">/score-jobs</text>
+    <text x="840" y="514" fill="#94a3b8" text-anchor="end">적합도</text>
+
+    <rect x="882" y="488" width="256" height="44" rx="10" fill="#fff" stroke="#c7d2e0" stroke-width="2"/>
+    <text x="906" y="514" font-weight="700" fill="#334155">/check-jobs</text>
+    <text x="1114" y="514" fill="#94a3b8" text-anchor="end">마감 · 변경</text>
+  </g>
+
+  <!-- 상태 · 동일 폭 112 · 간격 9 · 보드 순서 -->
+  <text x="60" y="556" font-size="13" font-weight="700" fill="#94a3b8">상태 · 보드 순서</text>
+  <g font-size="13" text-anchor="middle">
+    <rect x="60" y="570" width="112" height="32" rx="7" fill="#dcefe0"/><text x="116" y="590" fill="#2f6b40">최종합격</text>
+    <rect x="181" y="570" width="112" height="32" rx="7" fill="#fbe0ec"/><text x="237" y="590" fill="#8a4a6a">면접진행</text>
+    <rect x="302" y="570" width="112" height="32" rx="7" fill="#fbe6d2"/><text x="358" y="590" fill="#8a6033">서류통과</text>
+    <rect x="423" y="570" width="112" height="32" rx="7" fill="#fbf0cf"/><text x="479" y="590" fill="#7d6a2a">지원완료</text>
+    <rect x="544" y="570" width="112" height="32" rx="7" fill="#e8ddf5"/><text x="600" y="590" fill="#5b4382">지원예정</text>
+    <rect x="665" y="570" width="112" height="32" rx="7" fill="#d9e6fb"/><text x="721" y="590" fill="#2f5d9e">관심</text>
+    <rect x="786" y="570" width="112" height="32" rx="7" fill="#e6e9ee"/><text x="842" y="590" fill="#64748b">인박스</text>
+    <rect x="907" y="570" width="112" height="32" rx="7" fill="#f5dcdc"/><text x="963" y="590" fill="#8a4a4a">불합격</text>
+    <rect x="1028" y="570" width="112" height="32" rx="7" fill="#e2e8f0"/><text x="1084" y="590" fill="#8494a8">마감</text>
+  </g>
+</svg>

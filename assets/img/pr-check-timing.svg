@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 330" width="920" height="330" font-family="system-ui, 'Apple SD Gothic Neo', 'Segoe UI', sans-serif">
+  <defs>
+    <marker id="ar" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto">
+      <polygon points="0 0, 9 3.5, 0 7" fill="#94a3b8"/>
+    </marker>
+    <marker id="arg" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto">
+      <polygon points="0 0, 9 3.5, 0 7" fill="#10b981"/>
+    </marker>
+    <filter id="sh" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#0f172a1a"/>
+    </filter>
+  </defs>
+
+  <rect width="920" height="330" fill="#f8fafc" rx="16"/>
+
+  <!-- ───────── 현재 ───────── -->
+  <text x="40" y="46" font-size="15" font-weight="700" fill="#334155">지금</text>
+
+  <g filter="url(#sh)">
+    <rect x="40" y="62" width="120" height="44" rx="8" fill="#ffffff" stroke="#e2e8f0"/>
+    <rect x="250" y="62" width="120" height="44" rx="8" fill="#ffffff" stroke="#e2e8f0"/>
+    <rect x="418" y="62" width="130" height="44" rx="8" fill="#ffffff" stroke="#e2e8f0"/>
+    <rect x="596" y="62" width="140" height="44" rx="8" fill="#fef2f2" stroke="#fecaca"/>
+    <rect x="784" y="62" width="96" height="44" rx="8" fill="#ffffff" stroke="#e2e8f0"/>
+  </g>
+
+  <text x="100" y="90" font-size="14" fill="#334155" text-anchor="middle">PR 생성</text>
+  <text x="310" y="90" font-size="14" fill="#334155" text-anchor="middle">머지</text>
+  <text x="483" y="90" font-size="14" fill="#334155" text-anchor="middle">develop push</text>
+  <text x="666" y="90" font-size="14" fill="#b91c1c" text-anchor="middle">CD 빌드</text>
+  <text x="832" y="90" font-size="14" fill="#334155" text-anchor="middle">배포</text>
+
+  <line x1="164" y1="84" x2="246" y2="84" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#ar)"/>
+  <line x1="374" y1="84" x2="414" y2="84" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#ar)"/>
+  <line x1="552" y1="84" x2="592" y2="84" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#ar)"/>
+  <line x1="740" y1="84" x2="780" y2="84" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#ar)"/>
+
+  <!-- 검사 공백 표시 -->
+  <rect x="170" y="120" width="70" height="26" rx="13" fill="#f1f5f9" stroke="#cbd5e1" stroke-dasharray="4 3"/>
+  <text x="205" y="137" font-size="12" fill="#64748b" text-anchor="middle">검사 없음</text>
+  <line x1="205" y1="106" x2="205" y2="118" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="3 3"/>
+
+  <line x1="666" y1="108" x2="666" y2="132" stroke="#f87171" stroke-width="1.5"/>
+  <text x="666" y="150" font-size="12.5" fill="#b91c1c" text-anchor="middle">여기서 처음 실패를 안다</text>
+  <text x="666" y="168" font-size="12" fill="#94a3b8" text-anchor="middle">이미 머지된 뒤</text>
+
+  <line x1="40" y1="196" x2="880" y2="196" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- ───────── 제안 ───────── -->
+  <text x="40" y="228" font-size="15" font-weight="700" fill="#334155">PR CI를 붙이면</text>
+
+  <g filter="url(#sh)">
+    <rect x="40" y="244" width="120" height="44" rx="8" fill="#ffffff" stroke="#e2e8f0"/>
+    <rect x="196" y="244" width="170" height="44" rx="8" fill="#ecfdf5" stroke="#a7f3d0"/>
+    <rect x="418" y="244" width="130" height="44" rx="8" fill="#ffffff" stroke="#e2e8f0"/>
+    <rect x="596" y="244" width="140" height="44" rx="8" fill="#ffffff" stroke="#e2e8f0"/>
+    <rect x="784" y="244" width="96" height="44" rx="8" fill="#ffffff" stroke="#e2e8f0"/>
+  </g>
+
+  <text x="100" y="272" font-size="14" fill="#334155" text-anchor="middle">PR 생성</text>
+  <text x="281" y="266" font-size="13.5" fill="#047857" text-anchor="middle" font-weight="600">lint · 포맷 · 빌드</text>
+  <text x="281" y="282" font-size="11.5" fill="#059669" text-anchor="middle">통과 못 하면 못 넘어감</text>
+  <text x="483" y="272" font-size="14" fill="#334155" text-anchor="middle">머지</text>
+  <text x="666" y="272" font-size="14" fill="#334155" text-anchor="middle">CD 빌드</text>
+  <text x="832" y="272" font-size="14" fill="#334155" text-anchor="middle">배포</text>
+
+  <line x1="164" y1="266" x2="192" y2="266" stroke="#10b981" stroke-width="1.5" marker-end="url(#arg)"/>
+  <line x1="370" y1="266" x2="414" y2="266" stroke="#10b981" stroke-width="1.5" marker-end="url(#arg)"/>
+  <line x1="552" y1="266" x2="592" y2="266" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#ar)"/>
+  <line x1="740" y1="266" x2="780" y2="266" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#ar)"/>
+
+  <text x="40" y="314" font-size="12" fill="#94a3b8">CD 파이프라인은 그대로다. PR 시점에 검사 한 단계를 앞당겨 붙이는 것이다.</text>
+</svg>
